@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, ArrowRight, Megaphone, Rss, Terminal, Code, Cloud } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Calendar, Mail, Linkedin, Github, BookOpen, Instagram, Users, Award, ArrowRight, Megaphone, Rss } from 'lucide-react';
 
 function Links() {
   return (
@@ -69,35 +69,6 @@ function Links() {
             book a 1:1 session ↓
           </a>
         </p>
-
-
-        {/* ── SECTION 2: FREE RESOURCES ── */}
-        <div className="pt-5">
-          <div className="flex items-center justify-between mb-2">
-            <p className="text-xs font-bold text-ali-heading uppercase tracking-widest">
-              Start Here — Free Resources
-            </p>
-            <span className="text-[10px] text-gray-400">Most downloaded on LinkedIn ↓</span>
-          </div>
-
-          {/* Claude Code Playbook — MOST POPULAR */}
-          <a href="https://vamsipenmetsa.gumroad.com/l/claude" target="_blank" rel="noopener noreferrer"
-            className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border-2 border-green-500/40 hover:border-green-500 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
-            <div className="w-10 h-10 bg-ali-orange rounded-xl flex items-center justify-center flex-shrink-0">
-              <BookOpen size={20} className="text-white" />
-            </div>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2 mb-0.5 flex-wrap">
-                <p className="font-bold text-sm text-ali-heading">Agentic AI Patterns — The Claude Code Playbook</p>
-                <span className="text-[9px] font-bold px-1.5 py-0.5 bg-green-100 text-green-700 rounded-full whitespace-nowrap">MOST POPULAR</span>
-              </div>
-              <p className="text-xs text-gray-500">Claude Code patterns, agentic workflows &amp; prompt engineering</p>
-            </div>
-            <span className="text-[10px] font-bold px-2 py-0.5 bg-green-500 text-white rounded-full flex-shrink-0">FREE</span>
-          </a>
-
-          <p className="text-center text-[11px] text-gray-400 mt-2">Downloaded by 500+ engineers</p>
-        </div>
 
 
         {/* ── SECTION 3: SOCIAL PROOF (before paid CTAs) ── */}
@@ -173,52 +144,6 @@ function Links() {
             <p className="text-sm text-gray-600 italic">"His insights regarding DevOps tools and technologies are very valuable."</p>
             <p className="text-xs text-gray-400 mt-1"><strong className="text-ali-heading">Sumeet K.</strong> · Dec 2025</p>
           </div>
-        </div>
-
-
-        {/* ── SECTION 5: SELF-STUDY ARSENAL ── */}
-        <div className="pt-3">
-          <p className="text-xs font-bold text-ali-heading uppercase tracking-widest mb-1">Self-Study Arsenal</p>
-          <p className="text-xs text-gray-400 mb-3">Everything I wish existed when I was studying for certifications · From $2.99</p>
-
-          <a href="https://vamsipenmetsa.gumroad.com/l/terraform" target="_blank" rel="noopener noreferrer"
-            className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all mb-3">
-            <div className="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
-              <Terminal size={20} className="text-purple-600" />
-            </div>
-            <div className="flex-1 min-w-0">
-              <p className="font-bold text-sm text-ali-heading">Terraform EBook</p>
-              <p className="text-xs text-gray-500">IaC from fundamentals to production</p>
-            </div>
-            <span className="text-xs font-bold text-gray-400 flex-shrink-0">$2.99+</span>
-            <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
-          </a>
-
-          <a href="https://vamsipenmetsa.gumroad.com/l/ghcp" target="_blank" rel="noopener noreferrer"
-            className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all mb-3">
-            <div className="w-10 h-10 bg-ali-blue/15 rounded-xl flex items-center justify-center flex-shrink-0">
-              <Code size={20} className="text-ali-blue-dark" />
-            </div>
-            <div className="flex-1 min-w-0">
-              <p className="font-bold text-sm text-ali-heading">GitHub Copilot Guide</p>
-              <p className="text-xs text-gray-500">Master AI-powered coding with prompting strategies</p>
-            </div>
-            <span className="text-xs font-bold text-gray-400 flex-shrink-0">$4.99+</span>
-            <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
-          </a>
-
-          <a href="https://vamsipenmetsa.gumroad.com/l/kube" target="_blank" rel="noopener noreferrer"
-            className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border border-gray-100 hover:shadow-lg hover:-translate-y-0.5 transition-all">
-            <div className="w-10 h-10 bg-ali-orange/10 rounded-xl flex items-center justify-center flex-shrink-0">
-              <Cloud size={20} className="text-ali-orange" />
-            </div>
-            <div className="flex-1 min-w-0">
-              <p className="font-bold text-sm text-ali-heading">Kubernetes Cheat Sheet</p>
-              <p className="text-xs text-gray-500">Complete K8s reference — basics to advanced</p>
-            </div>
-            <span className="text-xs font-bold text-gray-400 flex-shrink-0">$2.99+</span>
-            <ArrowRight size={16} className="text-gray-300 flex-shrink-0" />
-          </a>
         </div>
 
 
