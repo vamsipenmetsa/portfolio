@@ -72,24 +72,23 @@ function App() {
 
           {/* Text Side */}
           <div className="w-full md:w-7/12 text-center md:text-left space-y-5">
-            <p className="text-sm font-bold tracking-widest uppercase text-ali-blue-dark">AI Systems Architect</p>
+            <p className="text-sm font-bold tracking-widest uppercase text-ali-blue-dark">AI Systems Architect · LSEG × Microsoft</p>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-ali-heading leading-tight">
-              Building ML/LLM Platforms
+              From Manual Tester to AI Systems Architect —
               <span className="block text-ali-orange relative">
-                at Enterprise Scale
-                <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-blue-dark" viewBox="0 0 320 9" fill="none" aria-hidden="true">
-                  <path d="M2 7C74 3.7 253 -2.3 318 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+                And Helping 150+ Engineers Do The Same
+                <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-blue-dark" viewBox="0 0 580 9" fill="none" aria-hidden="true">
+                  <path d="M2 7C134 3.7 459 -2.3 578 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-sans max-w-xl">
-              I've helped <span className="font-bold text-ali-heading relative inline-block">
-                150+ engineers
-                <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-orange" viewBox="0 0 150 9" fill="none" aria-hidden="true">
-                  <path d="M2 7C35 3.7 119 -2.3 148 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+              I build ML/LLM platforms at <span className="font-bold text-ali-heading">LSEG × Microsoft UK</span>. On the side, I help Cloud &amp; DevOps engineers <span className="font-bold text-ali-heading relative inline-block">crack interviews, land EU jobs,
+                <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-orange" viewBox="0 0 310 9" fill="none" aria-hidden="true">
+                  <path d="M2 7C72 3.7 244 -2.3 308 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
-              </span> break into cloud, land DevOps roles, and ace technical interviews. Currently architecting ML/LLM platforms for <span className="font-bold text-ali-heading">LSEG × Microsoft UK</span>.
+              </span> and future-proof their careers with AI.
             </p>
 
             {/* Trust Bar */}
@@ -118,14 +117,14 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-14 text-center">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-3">
-              How Can <span className="relative inline-block">
-                I Help You?
+              Work With Me — <span className="relative inline-block">
+                1:1 Guidance
                 <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-blue" viewBox="0 0 200 9" fill="none" aria-hidden="true">
                   <path d="M2 7C45.9 3.7 156.7 -2.3 198 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>
             </h2>
-            <p className="text-gray-500 text-lg mt-4 max-w-2xl mx-auto">Practical guidance from someone who's walked the path — Manual Tester → Automation → DevOps → SRE → Platform Engineer → Cloud.</p>
+            <p className="text-gray-500 text-lg mt-4 max-w-2xl mx-auto">150+ engineers have used these sessions to land interviews, get offers, and level up — from someone who made the full journey from Manual Tester to AI Systems Architect.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -138,7 +137,7 @@ function App() {
               </div>
               <h3 className="text-xl font-serif font-bold mb-2 group-hover:text-ali-blue-dark transition-colors">Land Your Next Cloud Role</h3>
               <p className="text-gray-600 leading-relaxed mb-5 text-sm">
-                Mock interviews, career strategy, and personalized guidance. Based on <span className="font-bold">150+ technical interviews</span> conducted for a global consulting firm.
+                Struggling to crack cloud interviews? I run the exact mock interview format top EU companies use — you'll walk out knowing precisely what to fix.
               </p>
               <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 bg-ali-blue-dark text-white rounded-full font-bold text-sm hover:bg-ali-orange hover:gap-3 hover:shadow-lg transition-all">
                 Book session <ArrowRight size={16} />
@@ -154,7 +153,7 @@ function App() {
               </div>
               <h3 className="text-xl font-serif font-bold mb-2 group-hover:text-ali-orange transition-colors">Transition to Cloud/DevOps</h3>
               <p className="text-gray-600 leading-relaxed mb-5 text-sm">
-                LinkedIn optimization, networking strategies, and a clear roadmap to break into cloud & DevOps — from someone who made the switch.
+                Don't know how to transition to Cloud/DevOps? I'll map the exact 90-day roadmap based on your background, including LinkedIn optimization and networking strategy.
               </p>
               <a href="https://topmate.io/vamsipenmetsa/137043?utm_source=public_profile&utm_campaign=vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 bg-ali-orange text-white rounded-full font-bold text-sm hover:bg-ali-blue-dark hover:gap-3 hover:shadow-lg transition-all">
                 Book session <ArrowRight size={16} />
@@ -170,7 +169,7 @@ function App() {
               </div>
               <h3 className="text-xl font-serif font-bold mb-2 group-hover:text-yellow-700 transition-colors">Resume That Gets Interviews</h3>
               <p className="text-gray-600 leading-relaxed mb-5 text-sm">
-                Professional review and optimization for Cloud & DevOps roles. Stand out to recruiters and pass ATS filters.
+                Getting ignored on job applications? I rewrite resumes to pass ATS filters and catch the eye of EU hiring managers — for Cloud &amp; DevOps roles specifically.
               </p>
               <a href="https://topmate.io/vamsipenmetsa/1804944?utm_source=public_profile&utm_campaign=vamsipenmetsa" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 bg-ali-yellow text-ali-heading rounded-full font-bold text-sm hover:bg-ali-blue-dark hover:text-white hover:gap-3 hover:shadow-lg transition-all">
                 Book session <ArrowRight size={16} />
@@ -184,13 +183,13 @@ function App() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-3 text-center">
-            What <span className="relative inline-block">People
-              <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-orange" viewBox="0 0 80 9" fill="none" aria-hidden="true">
-                <path d="M2 7C18 3.7 63 -2.3 78 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+            What <span className="relative inline-block">Engineers
+              <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-orange" viewBox="0 0 100 9" fill="none" aria-hidden="true">
+                <path d="M2 7C23 3.7 79 -2.3 98 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
               </svg>
-            </span> Say
+            </span> Say After Working With Me
           </h2>
-          <p className="text-gray-500 text-center mb-10">From mentorship sessions and technical interviews</p>
+          <p className="text-gray-500 text-center mb-10">Real results from 1:1 sessions — interviews passed, jobs landed, careers unlocked</p>
 
           {/* Mentorship Testimonials */}
           <div className="mb-6">
@@ -679,14 +678,29 @@ function App() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-3">
-              Products & <span className="relative inline-block">
-                Resources
+              Resources — <span className="relative inline-block">
+                Free to 1:1
                 <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-blue-dark" viewBox="0 0 130 9" fill="none" aria-hidden="true">
                   <path d="M2 7C30 3.7 103 -2.3 128 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
               </span>
             </h2>
-            <p className="text-gray-500 text-lg">Tools and guides to accelerate your career.</p>
+            <p className="text-gray-500 text-lg">Start free. Invest when you're ready.</p>
+
+            {/* Value ladder steps */}
+            <div className="flex items-center justify-center gap-2 mt-5 flex-wrap">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-green-50 border border-green-200 rounded-full text-xs font-bold text-green-700">
+                Step 1 — Free Ebooks
+              </span>
+              <span className="text-gray-300 text-sm">→</span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-purple-50 border border-purple-200 rounded-full text-xs font-bold text-purple-700">
+                Step 2 — Paid Guides ($2.99+)
+              </span>
+              <span className="text-gray-300 text-sm">→</span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-ali-orange/10 border border-ali-orange/30 rounded-full text-xs font-bold text-ali-orange">
+                Step 3 — Book a 1:1 Session
+              </span>
+            </div>
           </div>
 
           {/* Featured Free Products */}
@@ -763,8 +777,11 @@ function App() {
             </a>
           </div>
 
-          {/* Newsletter CTAs */}
-          <div className="mt-10 grid md:grid-cols-2 gap-6">
+          {/* Newsletter CTAs — Follow-up funnel */}
+          <div className="mt-10">
+            <p className="text-center text-sm text-gray-500 mb-6">Not ready to book yet? Join 4,500+ engineers who get weekly insights straight from the field.</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white rounded-3xl p-8 border border-[#0A66C2]/20 text-center">
               <div className="flex flex-col items-center gap-4">
                 <div className="w-14 h-14 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center">
