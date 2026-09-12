@@ -8,6 +8,9 @@ function App() {
 
   return (
     <div className="min-h-screen bg-ali-cream text-ali-text selection:bg-ali-orange selection:text-white">
+      {/* Top accent line */}
+      <div className="h-0.5 bg-gradient-to-r from-ali-orange via-purple-500 to-ali-blue-dark" />
+
       {/* Navigation */}
       <nav className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
       <div className="w-full py-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -52,12 +55,21 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-12 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section className="pt-12 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        {/* Dot grid background */}
+        <div className="absolute inset-0 bg-dot-pattern pointer-events-none" aria-hidden="true" />
+        {/* Aurora blobs */}
+        <div className="absolute -top-24 -right-24 w-[480px] h-[480px] rounded-full bg-gradient-to-br from-ali-orange/10 to-purple-400/8 blur-3xl pointer-events-none" aria-hidden="true" />
+        <div className="absolute -bottom-20 -left-16 w-80 h-80 rounded-full bg-gradient-to-tr from-ali-blue/12 to-ali-yellow/8 blur-3xl pointer-events-none" aria-hidden="true" />
+
+        <div className="max-w-7xl mx-auto">
         <div className="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-20">
 
           {/* Image Side */}
           <div className="relative w-full md:w-5/12 flex justify-center md:justify-end">
             <div className="relative w-72 h-72 md:w-[420px] md:h-[420px]">
+              {/* Portrait glow ring */}
+              <div className="absolute inset-0 bg-gradient-to-br from-ali-orange/20 via-purple-400/10 to-ali-blue/15 rounded-full blur-2xl scale-110 pointer-events-none" aria-hidden="true" />
               <img
                 src="./vamsiPenmetsa.webp"
                 alt="Vamsi Penmetsa — AI Systems Architect"
@@ -101,7 +113,7 @@ function App() {
             </div>
 
             <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="px-8 py-3.5 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark hover:shadow-xl transition-all shadow-lg">
+              <a href="https://topmate.io/vamsipenmetsa/1755002" target="_blank" rel="noopener noreferrer" className="px-8 py-3.5 bg-ali-orange text-white rounded-full font-bold hover:bg-ali-blue-dark transition-all glow-cta">
                 Book a 1:1 Session <ArrowRight size={18} className="inline ml-1 -mt-0.5" />
               </a>
               <a href="#products" className="px-8 py-3.5 bg-white text-ali-heading border-2 border-gray-200 rounded-full font-bold hover:border-ali-orange hover:shadow-lg transition-all">
@@ -110,10 +122,15 @@ function App() {
             </div>
           </div>
         </div>
+        </div>{/* end max-w-7xl */}
       </section>
 
+      {/* Section divider */}
+      <div className="section-divider mx-4" aria-hidden="true" />
+
       {/* Services Section */}
-      <section id="services" className="py-20 bg-white">
+      <section id="services" className="py-20 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-dot-pattern opacity-40 pointer-events-none" aria-hidden="true" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-14 text-center">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-3">
@@ -178,6 +195,8 @@ function App() {
           </div>
         </div>
       </section>
+
+      <div className="section-divider mx-4" aria-hidden="true" />
 
       {/* Social Proof / Testimonials */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
@@ -290,6 +309,8 @@ function App() {
           </div>
         </div>
       </section>
+
+      <div className="section-divider mx-4" aria-hidden="true" />
 
       {/* Featured Talk Section */}
       <section id="talks" className="py-20 bg-gradient-to-br from-ali-blue/5 via-white to-ali-orange/5">
@@ -428,6 +449,8 @@ function App() {
           </div>
         </div>
       </section>
+
+      <div className="section-divider mx-4" aria-hidden="true" />
 
       {/* About Section — Compact */}
       <section id="about" className="py-20 bg-gradient-to-b from-white to-ali-cream/30">
@@ -673,6 +696,8 @@ function App() {
         </div>
       </section>
 
+      <div className="section-divider mx-4" aria-hidden="true" />
+
       {/* Products & Resources Section */}
       <section id="products" className="py-20 bg-gradient-to-b from-ali-cream to-ali-yellow/10">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -703,37 +728,22 @@ function App() {
             </div>
           </div>
 
-          {/* Featured Free Products */}
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
+          {/* Featured Free Product */}
+          <div className="mb-6">
             <a href="https://vamsipenmetsa.gumroad.com/l/claude" target="_blank" rel="noopener noreferrer" className="group block bg-white rounded-3xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-2 border-green-500/40 hover:border-green-500 relative overflow-hidden">
-              <div className="absolute top-4 right-4">
-                <span className="text-xs font-bold px-4 py-1.5 bg-green-500 text-white rounded-full shadow-sm">FREE</span>
+              <div className="absolute top-4 right-4 flex items-center gap-2">
+                <span className="text-xs font-bold px-3 py-1.5 bg-green-100 text-green-700 rounded-full">MOST POPULAR</span>
+                <span className="text-xs font-bold px-3 py-1.5 bg-green-500 text-white rounded-full shadow-sm">FREE</span>
               </div>
               <div className="flex items-center gap-5">
-                <div className="w-16 h-16 bg-gradient-to-br from-ali-orange/20 to-ali-yellow/20 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <div className="w-16 h-16 bg-gradient-to-br from-ali-orange/20 to-purple-200/40 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                   <BookOpen size={32} className="text-ali-orange" />
                 </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="font-bold text-lg mb-1 group-hover:text-ali-orange transition-colors">Claude Exam Patterns EBook</h3>
-                  <p className="text-sm text-gray-500">Exam patterns & prompt engineering, free to download</p>
+                <div className="flex-1 min-w-0 pr-24">
+                  <h3 className="font-bold text-lg mb-1 group-hover:text-ali-orange transition-colors">Agentic AI Patterns — The Claude Code Playbook</h3>
+                  <p className="text-sm text-gray-500">Claude Code patterns, prompt engineering & agentic workflows — free eBook</p>
                 </div>
                 <ArrowRight size={20} className="text-gray-300 group-hover:text-ali-orange transition-colors flex-shrink-0" />
-              </div>
-            </a>
-
-            <a href="https://vamsipenmetsa.gumroad.com/l/linkedin" target="_blank" rel="noopener noreferrer" className="group block bg-white rounded-3xl p-6 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border-2 border-green-500/40 hover:border-green-500 relative overflow-hidden">
-              <div className="absolute top-4 right-4">
-                <span className="text-xs font-bold px-4 py-1.5 bg-green-500 text-white rounded-full shadow-sm">FREE</span>
-              </div>
-              <div className="flex items-center gap-5">
-                <div className="w-16 h-16 bg-[#0A66C2]/10 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                  <Linkedin size={32} className="text-[#0A66C2]" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="font-bold text-lg mb-1 group-hover:text-[#0A66C2] transition-colors">LinkedIn Zero-Cost Playbook</h3>
-                  <p className="text-sm text-gray-500">Attract recruiters — free step-by-step playbook</p>
-                </div>
-                <ArrowRight size={20} className="text-gray-300 group-hover:text-[#0A66C2] transition-colors flex-shrink-0" />
               </div>
             </a>
           </div>

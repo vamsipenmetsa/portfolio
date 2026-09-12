@@ -30,3 +30,23 @@ h6 {
 .font-hand {
   font-family: var(--font-hand);
 }
+
+/* Subtle dot-grid background for hero/sections */
+.bg-dot-pattern {
+  background-image: radial-gradient(circle, rgba(26,26,26,0.055) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+}
+
+/* Gradient section divider line */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent 5%, #e8e3da 40%, #e8e3da 60%, transparent 95%);
+}
+
+/* Orange glow for primary CTAs */
+.glow-cta {
+  box-shadow: 0 0 28px rgba(245,158,94,0.38), 0 6px 18px rgba(245,158,94,0.22);
+}
+.glow-cta:hover {
+  box-shadow: 0 0 40px rgba(245,158,94,0.5), 0 8px 24px rgba(245,158,94,0.3);
+}

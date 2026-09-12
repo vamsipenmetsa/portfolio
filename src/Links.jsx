@@ -58,9 +58,9 @@ function Links() {
       <div className="max-w-lg mx-auto px-4 pb-16 space-y-3">
 
         {/* Primary hero CTA */}
-        <a href="https://vamsipenmetsa.gumroad.com/l/linkedin" target="_blank" rel="noopener noreferrer"
+        <a href="https://vamsipenmetsa.gumroad.com/l/claude" target="_blank" rel="noopener noreferrer"
           className="block w-full text-center py-4 bg-ali-orange text-white rounded-2xl font-bold text-sm hover:opacity-90 transition-opacity shadow-md">
-          Get My Free LinkedIn Playbook →
+          Get My Free Claude Code Playbook →
         </a>
         <p className="text-center text-xs text-gray-400 -mt-1">
           Or{' '}
@@ -80,31 +80,18 @@ function Links() {
             <span className="text-[10px] text-gray-400">Most downloaded on LinkedIn ↓</span>
           </div>
 
-          {/* LinkedIn Playbook — MOST POPULAR */}
-          <a href="https://vamsipenmetsa.gumroad.com/l/linkedin" target="_blank" rel="noopener noreferrer"
-            className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border-2 border-green-500/40 hover:border-green-500 hover:shadow-lg hover:-translate-y-0.5 transition-all relative mb-3">
-            <div className="w-10 h-10 bg-[#0A66C2] rounded-xl flex items-center justify-center flex-shrink-0">
-              <Linkedin size={20} className="text-white" />
-            </div>
-            <div className="flex-1 min-w-0">
-              <div className="flex items-center gap-2 mb-0.5">
-                <p className="font-bold text-sm text-ali-heading">LinkedIn Zero-Cost Playbook</p>
-                <span className="text-[9px] font-bold px-1.5 py-0.5 bg-green-100 text-green-700 rounded-full">MOST POPULAR</span>
-              </div>
-              <p className="text-xs text-gray-500">How I grew to 30.5K followers — free, no ads</p>
-            </div>
-            <span className="text-[10px] font-bold px-2 py-0.5 bg-green-500 text-white rounded-full flex-shrink-0">FREE</span>
-          </a>
-
-          {/* Claude EBook */}
+          {/* Claude Code Playbook — MOST POPULAR */}
           <a href="https://vamsipenmetsa.gumroad.com/l/claude" target="_blank" rel="noopener noreferrer"
             className="flex items-center gap-4 w-full bg-white rounded-2xl p-4 border-2 border-green-500/40 hover:border-green-500 hover:shadow-lg hover:-translate-y-0.5 transition-all relative">
             <div className="w-10 h-10 bg-ali-orange rounded-xl flex items-center justify-center flex-shrink-0">
               <BookOpen size={20} className="text-white" />
             </div>
             <div className="flex-1 min-w-0">
-              <p className="font-bold text-sm text-ali-heading">Claude AI Exam Patterns EBook</p>
-              <p className="text-xs text-gray-500">Pass the AI certification on your first attempt</p>
+              <div className="flex items-center gap-2 mb-0.5 flex-wrap">
+                <p className="font-bold text-sm text-ali-heading">Agentic AI Patterns — The Claude Code Playbook</p>
+                <span className="text-[9px] font-bold px-1.5 py-0.5 bg-green-100 text-green-700 rounded-full whitespace-nowrap">MOST POPULAR</span>
+              </div>
+              <p className="text-xs text-gray-500">Claude Code patterns, agentic workflows &amp; prompt engineering</p>
             </div>
             <span className="text-[10px] font-bold px-2 py-0.5 bg-green-500 text-white rounded-full flex-shrink-0">FREE</span>
           </a>
