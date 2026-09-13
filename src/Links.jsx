@@ -198,7 +198,7 @@ function Links() {
                 <p className="text-xs text-white/80">Sponsorships · Partnerships · Promos</p>
               </div>
             </div>
-            <p className="text-xs text-white/90 pl-12">30.5K LinkedIn followers · 4.5K newsletter subscribers · <span className="font-bold">$300/package</span></p>
+            <p className="text-xs text-white/90 pl-12">30.5K LinkedIn followers · 4.5K newsletter subscribers · <span className="font-bold">from $399 · prices negotiable</span></p>
             <div className="flex items-center gap-1 pl-12 mt-2 text-xs font-bold text-white/90">
               View on Passionfroot <ArrowRight size={13} />
             </div>
