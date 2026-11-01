@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Recognition from './Recognition.jsx';
 import { Menu, X, Github, Linkedin, Mail, ArrowRight, BookOpen, Cloud, Terminal, Code, Instagram, Calendar, Mic, Users, MapPin, Quote, Megaphone, Rss } from 'lucide-react';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             <a href="#services" className="font-sans font-medium hover:text-ali-orange transition-colors">Services</a>
+            <a href="#recognition" className="font-sans font-medium hover:text-ali-orange transition-colors">Recognition</a>
             <a href="#talks" className="font-sans font-medium hover:text-ali-orange transition-colors">Talks</a>
             <a href="#about" className="font-sans font-medium hover:text-ali-orange transition-colors">About</a>
             <a href="#products" className="font-sans font-medium hover:text-ali-orange transition-colors">Products</a>
@@ -43,6 +45,7 @@ function App() {
           <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-xl z-50 border-t border-gray-100">
             <div className="p-4 space-y-4">
               <a href="#services" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Services</a>
+              <a href="#recognition" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Recognition</a>
               <a href="#talks" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Talks</a>
               <a href="#about" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>About</a>
               <a href="#products" className="block font-medium p-2 hover:bg-ali-cream rounded" onClick={toggleMenu}>Products</a>
@@ -84,7 +87,7 @@ function App() {
 
           {/* Text Side */}
           <div className="w-full md:w-7/12 text-center md:text-left space-y-5">
-            <p className="text-sm font-bold tracking-widest uppercase text-ali-blue-dark">AI Systems Architect · LSEG × Microsoft</p>
+            <p className="text-sm font-bold tracking-widest uppercase text-ali-blue-dark">AI Adoption Lead &amp; Systems Architect · LSEG × Microsoft</p>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-ali-heading leading-tight">
               From Manual Tester to AI Systems Architect —
               <span className="block text-ali-orange relative">
@@ -106,7 +109,8 @@ function App() {
             {/* Trust Bar */}
             <div className="flex flex-wrap gap-3 justify-center md:justify-start pt-2">
               <span className="text-xs font-bold px-3 py-1.5 bg-ali-blue/15 text-ali-blue-dark rounded-full">7X Azure Certified</span>
-              <span className="text-xs font-bold px-3 py-1.5 bg-ali-orange/15 text-ali-orange rounded-full">150+ Technical Interviews</span>
+              <span className="text-xs font-bold px-3 py-1.5 bg-ali-orange/15 text-ali-orange rounded-full">200+ Technical Interviews</span>
+              <span className="text-xs font-bold px-3 py-1.5 bg-ali-yellow/20 text-yellow-700 rounded-full">CEO&rsquo;s Bravo · AI Adoption</span>
               <span className="text-xs font-bold px-3 py-1.5 bg-ali-yellow/20 text-yellow-700 rounded-full">EPAM AI Ambassador</span>
               <span className="text-xs font-bold px-3 py-1.5 bg-purple-100 text-purple-700 rounded-full">Breaking Down Claude in 30 Days</span>
               <span className="text-xs font-bold px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full">GitHub Copilot Certified (GH-300)</span>
@@ -267,7 +271,7 @@ function App() {
           {/* Interview Feedback */}
           <div className="mb-6">
             <p className="text-xs font-bold uppercase tracking-widest text-ali-orange mb-4 flex items-center gap-2">
-              <span className="w-8 h-px bg-ali-orange"></span> Interview Feedback · 150+ Technical Interviews (Azure, DevOps, SRE, AWS)
+              <span className="w-8 h-px bg-ali-orange"></span> Interview Feedback · 200+ Technical Interviews (Azure, DevOps, SRE, AWS)
             </p>
           </div>
 
@@ -309,6 +313,10 @@ function App() {
           </div>
         </div>
       </section>
+
+      <div className="section-divider mx-4" aria-hidden="true" />
+
+      <Recognition />
 
       <div className="section-divider mx-4" aria-hidden="true" />
 
@@ -491,7 +499,7 @@ function App() {
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-ali-orange mt-0.5 text-sm">★</span>
-                  <p className="text-sm text-gray-700"><strong>Microsoft Copilot Champion</strong> & <strong>EPAM AI Ambassador</strong></p>
+                  <p className="text-sm text-gray-700"><strong>Microsoft AI Champion</strong>, <strong>EPAM AI Ambassador</strong> & <strong>CEO&rsquo;s Bravo</strong></p>
                 </div>
               </div>
             </div>
@@ -525,7 +533,7 @@ function App() {
 
               <div className="border-t border-gray-200 pt-4">
                 <p className="text-sm text-gray-600">
-                  <span className="font-bold text-ali-heading">150+ global technical interviews</span> conducted · EPAM Poland Ambassador 2023
+                  <span className="font-bold text-ali-heading">200+ global technical interviews</span> conducted · EPAM Poland Ambassador 2023
                 </p>
               </div>
             </div>
