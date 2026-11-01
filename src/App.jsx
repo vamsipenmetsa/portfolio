@@ -388,6 +388,12 @@ function App() {
 
               {/* Appreciation Quotes */}
               <div className="p-8 md:p-10 space-y-4 md:border-l border-gray-100">
+                  <div className="flex items-center gap-4 mb-5">
+                    <img src="./badges/presentation-talent.png" alt="Presentation Talent badge" width={64} height={64} className="w-16 h-16 rounded-full drop-shadow-md" loading="lazy" />
+                    <img src="./badges/sharing-knowledge.png" alt="Sharing Knowledge badge" width={64} height={64} className="w-16 h-16 rounded-full drop-shadow-md" loading="lazy" />
+                    <p className="text-sm font-bold text-ali-heading leading-snug">Presentation Talent &amp; Sharing Knowledge<span className="block text-xs font-normal text-gray-500">Recognised after Azure Meetup #82</span></p>
+                  </div>
+
                   <div className="bg-gradient-to-r from-ali-cream to-ali-orange/5 rounded-2xl p-4 border border-ali-orange/20">
                     <div className="flex items-start gap-3">
                       <Quote size={18} className="text-ali-orange flex-shrink-0 mt-0.5" />

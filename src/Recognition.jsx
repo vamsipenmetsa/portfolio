@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Award, ChevronDown, PenLine } from 'lucide-react';
+import { Award, ChevronDown } from 'lucide-react';
 
 const badge = (file) => `${import.meta.env.BASE_URL}badges/${file}.png`;
 
@@ -34,6 +34,33 @@ const ARTICLES = [
   ['Provenance and Multi-Source Synthesis — Attribution and Conflict Resolution', '18 Jun'],
   ['Scenario — Support Agent Architecture and Decision Points', '19 Jun'],
   ['Scenario — CI/CD Pipeline and Code Generation with Claude', '22 Jun'],
+];
+
+const FEATURED = [
+  ['Thank you for putting together the Claude exam preparation document. Your effort, attention to detail, and time invested in creating such a well-organized resource are truly appreciated. It will be a valuable guide for the entire team.', 'Irena J.', '06 Jul 2026'],
+  ['Thank you so much, Vamsi, for these clear and insightful Claude learning articles! Your explanations and examples are wonderfully easy to grasp. Fantastic work!', 'Cloud Poland reader', ''],
+  ['I appreciate the daily #30DaysofClaude articles. I have found them insightful and educational. This content will help me focus on the right concepts for the exam.', 'Will R.', '24 Jun 2026'],
+  ['Thank you for really useful 30-days Claude Certification preparation articles!', 'Dzmitry R.', '27 Jun 2026'],
+  ['Thank you for the articles, it really helped to prepare for the exam :)', 'Anupam K.', '17 Sep 2026'],
+  ["I want to thank you for these articles. I'll use them to finish getting ready!", 'Przemyslaw C.', '05 Jun 2026'],
+];
+
+const MORE_FEEDBACK = [
+  ['Great content for the exam prep', 'Anupam K.', '17 Sep 2026'],
+  ['Thanks', 'Yuliya B.', '18 Jul 2026'],
+  ['Thank you for your work!', 'Nirav J.', '05 Jul 2026'],
+  ['Thank you for this article.', 'Apoorva U.', '23 Jun 2026'],
+  ['Thanks for the Claude AI article series :)', 'Mikhail B.', '08 Jun 2026'],
+  ['Thanks for the article. It really helps.', 'Danilo N.', '03 Jun 2026'],
+  ['Thank you for the article!', 'Roman D.', '30 May 2026'],
+  ['Thanks for this really insightful, motivational, and helpful article!', 'Sebastian C.', 'EPAM Poland community'],
+  ['Awesome article!', 'Nikolai P.', '29 May 2026'],
+];
+
+const FEEDBACK_BADGES = [
+  ['valuable-article', 'Valuable Article'],
+  ['thank-you-article', 'Thank You'],
+  ['inspiring-article', 'Inspiring Article'],
 ];
 
 const STATS = [
@@ -77,6 +104,7 @@ function Quote({ children, source, accent }) {
 
 export default function Recognition() {
   const [open, setOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
 
   return (
     <section id="recognition" className="py-20 bg-white relative overflow-hidden">
@@ -152,13 +180,30 @@ export default function Recognition() {
           </div>
         </article>
 
+        {/* AI Assessor */}
+        <article className="bg-gradient-to-br from-teal-50 via-white to-ali-cream rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100 border-t-4 border-t-teal-500 mb-6 hover:shadow-xl transition-shadow">
+          <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
+            <img src={badge('cloud-pro-collaboration')} alt="Cloud Pro Collaboration badge" width={120} height={120} className="w-24 h-24 md:w-[120px] md:h-[120px] rounded-full drop-shadow-lg flex-shrink-0" loading="lazy" />
+            <div className="flex-1">
+              <span className="text-xs font-bold px-3 py-1.5 bg-teal-100 text-teal-800 rounded-full">AI Assessor</span>
+              <h3 className="text-2xl md:text-3xl font-serif font-bold mt-3">AI Assessor &mdash; Cloud Poland</h3>
+              <p className="text-sm text-gray-500 mt-1 mb-4">Cloud Pro Collaboration &middot; EPAM Cloud Poland community</p>
+              <p className="text-gray-700 leading-relaxed max-w-3xl">
+                Designing new skill assessments for <strong>AI adoption and competence</strong>, giving more than <strong>500 Cloud Poland colleagues</strong> a clear, practical way to measure where they are and where to grow with AI.
+              </p>
+            </div>
+            <div className="text-center md:text-right flex-shrink-0">
+              <p className="text-4xl font-serif font-bold text-teal-700">500+</p>
+              <p className="text-xs font-bold uppercase tracking-wider text-gray-500">Colleagues</p>
+            </div>
+          </div>
+        </article>
+
         {/* Writer + Interviewer */}
         <div className="grid md:grid-cols-2 gap-6 mb-6">
           <article className="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 border-t-4 border-t-green-500 hover:shadow-xl hover:-translate-y-1 transition-all">
             <div className="flex items-center justify-between gap-4 mb-5">
-              <div className="w-[88px] h-[88px] rounded-full bg-green-50 border border-green-100 flex items-center justify-center">
-                <PenLine size={34} className="text-green-600" />
-              </div>
+              <img src={badge('community-writer')} alt="We Are Community Writer badge" width={88} height={88} className="w-[88px] h-[88px] rounded-full drop-shadow-lg" loading="lazy" />
               <span className="text-xs font-bold px-3 py-1.5 bg-green-100 text-green-700 rounded-full">AI Contributor &middot; Writer</span>
             </div>
             <h3 className="text-2xl font-serif font-bold mb-1">#30DaysOfClaude</h3>
@@ -182,6 +227,60 @@ export default function Recognition() {
             <Quote accent="border-ali-orange">Your professionalism and competent assistance are greatly appreciated!</Quote>
             <p className="text-xs font-semibold text-gray-400 mt-5 pt-4 border-t border-gray-100">02 Jul 2026 &middot; Technical Interview Department</p>
           </article>
+        </div>
+
+        {/* Reader feedback */}
+        <div className="mb-6">
+          <div className="flex items-center justify-between flex-wrap gap-6 mb-6">
+            <div>
+              <h3 className="text-2xl md:text-3xl font-serif font-bold">Reader feedback</h3>
+              <p className="text-xs font-mono text-gray-400 mt-1">#30DaysOfClaude &middot; Cloud Poland community</p>
+            </div>
+            <div className="flex gap-5">
+              {FEEDBACK_BADGES.map(([f, label]) => (
+                <div key={f} className="flex flex-col items-center gap-1.5 text-center">
+                  <img src={badge(f)} alt={`${label} badge`} width={56} height={56} className="w-14 h-14 rounded-full drop-shadow-md" loading="lazy" />
+                  <span className="text-[10px] font-bold text-gray-500 leading-tight max-w-[72px]">{label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {FEATURED.map(([q, who, date]) => (
+              <figure key={q} className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col gap-4 hover:shadow-md transition-shadow">
+                <blockquote className="text-sm text-gray-700 leading-relaxed">
+                  <span className="block font-serif text-4xl leading-none h-5 text-ali-orange">&ldquo;</span>
+                  {q}
+                </blockquote>
+                <figcaption className="mt-auto flex items-baseline justify-between gap-3 text-sm">
+                  <span className="font-bold text-ali-heading">{who}</span>
+                  {date && <span className="font-mono text-xs text-gray-400 whitespace-nowrap">{date}</span>}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          <button
+            type="button"
+            onClick={() => setMoreOpen(!moreOpen)}
+            aria-expanded={moreOpen}
+            className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-ali-heading hover:text-ali-orange transition-colors"
+          >
+            More comments from colleagues ({MORE_FEEDBACK.length})
+            <ChevronDown size={16} className={`transition-transform ${moreOpen ? 'rotate-180' : ''}`} />
+          </button>
+          {moreOpen && (
+            <ul className="grid md:grid-cols-2 gap-x-8 mt-3">
+              {MORE_FEEDBACK.map(([q, who, date]) => (
+                <li key={q + who} className="py-3 border-t border-gray-200 text-sm">
+                  <div className="flex items-baseline justify-between gap-3">
+                    <span className="text-gray-800">{q}</span>
+                    <span className="font-mono text-xs text-gray-400 whitespace-nowrap">{who}</span>
+                  </div>
+                  <span className="font-mono text-[11px] text-gray-400">{date}</span>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
 
         {/* Article list */}
