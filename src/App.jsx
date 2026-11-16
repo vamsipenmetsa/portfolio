@@ -108,7 +108,7 @@ function App() {
 
             {/* Trust Bar */}
             <div className="flex flex-wrap gap-3 justify-center md:justify-start pt-2">
-              <span className="text-xs font-bold px-3 py-1.5 bg-ali-blue/15 text-ali-blue-dark rounded-full">7X Azure Certified</span>
+              <span className="text-xs font-bold px-3 py-1.5 bg-ali-blue/15 text-ali-blue-dark rounded-full">9X Azure Certified</span>
               <span className="text-xs font-bold px-3 py-1.5 bg-ali-orange/15 text-ali-orange rounded-full">200+ Technical Interviews</span>
               <span className="text-xs font-bold px-3 py-1.5 bg-ali-yellow/20 text-yellow-700 rounded-full">CEO&rsquo;s Bravo · AI Adoption</span>
               <span className="text-xs font-bold px-3 py-1.5 bg-ali-yellow/20 text-yellow-700 rounded-full">EPAM AI Ambassador</span>
@@ -292,16 +292,17 @@ function App() {
                 </div>
               </div>
               <div className="md:w-80 flex-shrink-0">
-                <img
-                  src="./Interview_feedback_sharedbyHR.webp"
-                  alt="Interview feedback from Mikolaj B. shared via HR"
-                  width={700}
-                  height={139}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
-                  onClick={(e) => window.open(e.target.src, '_blank')}
-                />
+                <a href="./Interview_feedback_sharedbyHR.webp" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="./Interview_feedback_sharedbyHR.webp"
+                    alt="Interview feedback from Mikolaj B. shared via HR"
+                    width={700}
+                    height={139}
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -408,16 +409,17 @@ function App() {
                             <p className="text-[11px] text-gray-500">EPAM Poland Cloud Discipline Head</p>
                           </div>
                         </div>
-                        <img
-                          src="./Bogumil_feedback.webp"
-                          alt="Feedback screenshot from Bogumil Barjasz after Azure Meetup #82"
-                          width={1000}
-                          height={263}
-                          loading="lazy"
-                          decoding="async"
-                          className="mt-3 w-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
-                          onClick={(e) => window.open(e.target.src, '_blank')}
-                        />
+                        <a href="./Bogumil_feedback.webp" target="_blank" rel="noopener noreferrer">
+                          <img
+                            src="./Bogumil_feedback.webp"
+                            alt="Feedback screenshot from Bogumil Barjasz after Azure Meetup #82"
+                            width={1000}
+                            height={263}
+                            loading="lazy"
+                            decoding="async"
+                            className="mt-3 w-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                          />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -436,16 +438,17 @@ function App() {
                             <p className="text-[11px] text-gray-500">Azure Architect</p>
                           </div>
                         </div>
-                        <img
-                          src="./Maciej_feedback.webp"
-                          alt="Feedback screenshot from Maciej Deptula after Azure Meetup #82"
-                          width={1000}
-                          height={216}
-                          loading="lazy"
-                          decoding="async"
-                          className="mt-3 w-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
-                          onClick={(e) => window.open(e.target.src, '_blank')}
-                        />
+                        <a href="./Maciej_feedback.webp" target="_blank" rel="noopener noreferrer">
+                          <img
+                            src="./Maciej_feedback.webp"
+                            alt="Feedback screenshot from Maciej Deptula after Azure Meetup #82"
+                            width={1000}
+                            height={216}
+                            loading="lazy"
+                            decoding="async"
+                            className="mt-3 w-full rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                          />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -497,7 +500,7 @@ function App() {
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
                   <span className="text-ali-blue-dark mt-0.5 text-sm">✓</span>
-                  <p className="text-sm text-gray-700"><strong>12+ Certifications</strong> incl. Azure, AWS & GitHub</p>
+                  <p className="text-sm text-gray-700"><strong>15+ Certifications</strong> incl. Azure, AWS, GitHub &amp; AI</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-ali-blue-dark mt-0.5 text-sm">✓</span>
@@ -559,7 +562,7 @@ function App() {
                   </div>
                   <div>
                     <h3 className="text-xl font-serif font-bold text-ali-heading">Certifications</h3>
-                    <p className="text-xs text-gray-400 mt-0.5">12+ across Azure · AWS · GitHub · AI</p>
+                    <p className="text-xs text-gray-400 mt-0.5">15+ across Azure · AWS · GitHub · AI</p>
                   </div>
                 </div>
                 <span className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 bg-green-50 text-green-700 border border-green-100 rounded-full">
@@ -573,9 +576,9 @@ function App() {
                   <p className="text-xs font-bold uppercase tracking-widest text-[#0078d4] flex items-center gap-2">
                     <span className="w-5 h-px bg-[#0078d4] inline-block"></span> Microsoft Azure
                   </p>
-                  <span className="text-[10px] font-bold px-2 py-1 bg-[#0078d4]/10 text-[#0078d4] rounded-full">7× Certified</span>
+                  <span className="text-[10px] font-bold px-2 py-1 bg-[#0078d4]/10 text-[#0078d4] rounded-full">9× Certified</span>
                 </div>
-                <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
+                <div className="grid grid-cols-3 md:grid-cols-5 gap-2">
                   {[
                     { img: "https://images.credly.com/images/987adb7e-49be-4e24-b67e-55986bd3fe66/azure-solutions-architect-expert-600x600.png", name: "Solutions Architect Expert", code: "AZ-305", url: "https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/25D93904B41DCA95?sharingId=C12B7F6430996004" },
                     { img: "https://images.credly.com/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png", name: "DevOps Engineer Expert", code: "AZ-400", url: "https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/9A6A85340BFB87D5?sharingId=C12B7F6430996004" },
@@ -583,10 +586,12 @@ function App() {
                     { img: "https://images.credly.com/images/63316b60-f62d-4e51-aacc-c23cb850089c/azure-developer-associate-600x600.png", name: "Developer Associate", code: "AZ-204", url: "https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/D01EC7BE672BE6F9?sharingId=C12B7F6430996004" },
                     { img: "https://images.credly.com/images/336eebfc-0ac3-4553-9a67-b402f491f185/azure-administrator-associate-600x600.png", name: "Administrator", code: "AZ-104", url: "https://learn.microsoft.com/api/credentials/share/en-gb/VamsiPenmetsa7/425394C45CA3A75A?sharingId=C12B7F6430996004" },
                     { img: "https://images.credly.com/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png", name: "Fundamentals", code: "AZ-900", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/" },
+                    { img: "https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-associate-badge.svg", name: "AI Apps & Agents Developer Associate", code: "AB-100", url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/", imgBg: "#0078d4" },
+                    { img: "https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-expert-badge.svg", name: "Agentic AI Solutions Architect Expert", code: "Expert", url: "https://learn.microsoft.com/en-us/credentials/certifications/agentic-ai-business-solutions-architect-expert/", imgBg: "#0078d4" },
                   ].map((cert) => (
                     <a key={cert.code} href={cert.url} target="_blank" rel="noopener noreferrer"
                       className="group flex flex-col items-center gap-2 p-3 rounded-2xl bg-blue-50/40 hover:bg-[#0078d4]/10 hover:-translate-y-1 transition-all duration-200 border border-blue-100/60">
-                      <img src={cert.img} alt={cert.name} className="w-16 h-16 object-contain group-hover:scale-105 transition-transform duration-200 drop-shadow-md" />
+                      <img src={cert.img} alt={cert.name} className="w-16 h-16 object-contain group-hover:scale-105 transition-transform duration-200 drop-shadow-md" style={cert.imgBg ? {background: cert.imgBg, borderRadius: '10px', padding: '6px'} : {}} />
                       <p className="text-[10px] font-bold text-ali-heading leading-tight text-center">{cert.name}</p>
                       <span className="text-[9px] font-bold px-1.5 py-0.5 bg-[#0078d4]/10 text-[#0078d4] rounded-full">{cert.code}</span>
                     </a>
@@ -633,6 +638,23 @@ function App() {
                     <span className="w-4 h-px bg-purple-600 inline-block"></span> AI & Leadership
                   </p>
                   <div className="space-y-2">
+                    {/* Frontier Transformation Engineer — featured */}
+                    <div className="flex items-center gap-3 p-4 rounded-2xl border" style={{background: 'linear-gradient(135deg, #061f2f 0%, #0a3345 100%)', borderColor: 'rgba(45,212,191,0.35)'}}>
+                      <svg viewBox="0 0 44 44" width="40" height="40" className="flex-shrink-0" aria-hidden="true">
+                        <polygon points="22,1 42,12 42,32 22,43 2,32 2,12" fill="#2dd4bf"/>
+                        <polygon points="22,5 38,15 38,29 22,39 6,29 6,15" fill="#0a2a3a"/>
+                        <rect x="15" y="10" width="5.5" height="5.5" rx="0.4" fill="#f25022"/>
+                        <rect x="22" y="10" width="5.5" height="5.5" rx="0.4" fill="#7fba00"/>
+                        <rect x="15" y="17" width="5.5" height="5.5" rx="0.4" fill="#00a4ef"/>
+                        <rect x="22" y="17" width="5.5" height="5.5" rx="0.4" fill="#ffb900"/>
+                        <polygon points="22,39 38,29 38,32 22,43 6,32 6,29" fill="#2dd4bf" opacity="0.5"/>
+                        <text x="22" y="32" textAnchor="middle" fill="#2dd4bf" fontSize="4.8" fontWeight="800" fontFamily="system-ui,sans-serif" letterSpacing="0.8">TITAN</text>
+                      </svg>
+                      <div>
+                        <p className="text-xs font-bold leading-snug" style={{color: '#ecfdf5'}}>Frontier Transformation Engineer</p>
+                        <span className="text-[9px] font-bold px-2 py-0.5 rounded-full" style={{background: 'rgba(45,212,191,0.15)', color: '#2dd4bf'}}>TITAN · Microsoft</span>
+                      </div>
+                    </div>
                     <div className="flex items-center gap-3 p-3 rounded-xl bg-purple-50/70 border border-purple-100/60">
                       <span className="text-base flex-shrink-0">🤖</span>
                       <p className="text-xs font-bold text-purple-700 leading-snug">EPAM AI Masterclass Excellence</p>
