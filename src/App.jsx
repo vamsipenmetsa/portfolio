@@ -640,16 +640,7 @@ function App() {
                   <div className="space-y-2">
                     {/* Frontier Transformation Engineer — featured */}
                     <div className="flex items-center gap-3 p-4 rounded-2xl border" style={{background: 'linear-gradient(135deg, #061f2f 0%, #0a3345 100%)', borderColor: 'rgba(45,212,191,0.35)'}}>
-                      <svg viewBox="0 0 44 44" width="40" height="40" className="flex-shrink-0" aria-hidden="true">
-                        <polygon points="22,1 42,12 42,32 22,43 2,32 2,12" fill="#2dd4bf"/>
-                        <polygon points="22,5 38,15 38,29 22,39 6,29 6,15" fill="#0a2a3a"/>
-                        <rect x="15" y="10" width="5.5" height="5.5" rx="0.4" fill="#f25022"/>
-                        <rect x="22" y="10" width="5.5" height="5.5" rx="0.4" fill="#7fba00"/>
-                        <rect x="15" y="17" width="5.5" height="5.5" rx="0.4" fill="#00a4ef"/>
-                        <rect x="22" y="17" width="5.5" height="5.5" rx="0.4" fill="#ffb900"/>
-                        <polygon points="22,39 38,29 38,32 22,43 6,32 6,29" fill="#2dd4bf" opacity="0.5"/>
-                        <text x="22" y="32" textAnchor="middle" fill="#2dd4bf" fontSize="4.8" fontWeight="800" fontFamily="system-ui,sans-serif" letterSpacing="0.8">TITAN</text>
-                      </svg>
+                      <img src="https://skillupwithlevelup.com/levelup-fy26/images/frontier-engineer-badge-icon.png" alt="Frontier Transformation Engineer TITAN" className="flex-shrink-0" width="44" height="44" style={{objectFit: 'contain'}} />
                       <div>
                         <p className="text-xs font-bold leading-snug" style={{color: '#ecfdf5'}}>Frontier Transformation Engineer</p>
                         <span className="text-[9px] font-bold px-2 py-0.5 rounded-full" style={{background: 'rgba(45,212,191,0.15)', color: '#2dd4bf'}}>TITAN · Microsoft</span>
