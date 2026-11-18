@@ -118,7 +118,7 @@ export default function Recognition() {
             Driving AI Adoption, <span className="text-ali-orange">Recognised by Leadership</span>
           </h2>
           <p className="text-gray-500 text-lg mt-4 max-w-2xl mx-auto">
-            From the CEO&rsquo;s Bravo to client delivery feedback &mdash; leading AI adoption for a 21-engineer team at Enterprise Client Project to improve productivity and drive business value.
+            From the CEO&rsquo;s Bravo to client delivery feedback &mdash; leading AI adoption for a 21-engineer team building ML models for regulated finance.
           </p>
         </div>
 
@@ -167,7 +167,7 @@ export default function Recognition() {
             <span className="text-xs font-bold px-3 py-1.5 bg-ali-blue/25 text-sky-800 rounded-full">AI Adoption Lead</span>
             <span className="text-xs font-bold px-3 py-1.5 bg-gray-100 text-gray-600 rounded-full">Going Extra Mile</span>
           </div>
-          <h3 className="text-2xl md:text-3xl font-serif font-bold mt-3">AI Champion &mdash; Enterprise Client Project</h3>
+          <h3 className="text-2xl md:text-3xl font-serif font-bold mt-3">AI Champion &mdash; Regulated Financial Services</h3>
           <p className="text-sm text-gray-500 mt-1 mb-8">Leading AI adoption for a 21-engineer team to improve productivity and drive customer business value</p>
           <div className="grid md:grid-cols-3 gap-8">
             {CHAMPION.map((c) => (
