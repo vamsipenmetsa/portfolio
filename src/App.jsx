@@ -1,14 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Recognition from './Recognition.jsx';
-import { Menu, X, Github, Linkedin, Mail, ArrowRight, BookOpen, Cloud, Terminal, Code, Instagram, Calendar, Mic, Users, MapPin, Quote, Megaphone, Rss } from 'lucide-react';
+import BusinessCard from './BusinessCard.jsx';
+import { Menu, X, Github, Linkedin, Mail, ArrowRight, BookOpen, Cloud, Terminal, Code, Instagram, Calendar, Mic, Users, MapPin, Quote, Megaphone, Rss, ChevronDown } from 'lucide-react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showCard, setShowCard] = useState(false);
+  const [certsOpen, setCertsOpen] = useState(false);
+
+  useEffect(() => {
+    // Show visiting card once per session
+    try {
+      if (!sessionStorage.getItem('cardSeen')) setShowCard(true);
+    } catch (_) {}
+  }, []);
+
+  const handleCardDismiss = () => {
+    setShowCard(false);
+    try { sessionStorage.setItem('cardSeen', '1'); } catch (_) {}
+  };
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
     <div className="min-h-screen bg-ali-cream text-ali-text selection:bg-ali-orange selection:text-white">
+      {/* Visiting card — shows once per session */}
+      {showCard && <BusinessCard onDismiss={handleCardDismiss} />}
+
       {/* Top accent line */}
       <div className="h-0.5 bg-gradient-to-r from-ali-orange via-purple-500 to-ali-blue-dark" />
 
@@ -555,7 +573,7 @@ function App() {
             <div className="bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
 
               {/* Header */}
-              <div className="flex items-center justify-between flex-wrap gap-3 mb-8">
+              <div className="flex items-center justify-between flex-wrap gap-3 mb-6">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-gradient-to-br from-ali-blue-dark to-ali-blue rounded-xl flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
@@ -565,10 +583,58 @@ function App() {
                     <p className="text-xs text-gray-400 mt-0.5">15+ across Azure · AWS · GitHub · AI</p>
                   </div>
                 </div>
-                <span className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 bg-green-50 text-green-700 border border-green-100 rounded-full">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span> All Verified
-                </span>
+                <div className="flex items-center gap-3">
+                  <span className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 bg-green-50 text-green-700 border border-green-100 rounded-full">
+                    <span className="w-2 h-2 bg-green-500 rounded-full"></span> All Verified
+                  </span>
+                  <button
+                    onClick={() => setCertsOpen(o => !o)}
+                    className="flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full border border-gray-200 hover:border-ali-blue hover:text-ali-blue-dark transition-colors"
+                  >
+                    {certsOpen ? 'Collapse' : 'Show all'}
+                    <ChevronDown size={13} className={`transition-transform duration-300 ${certsOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                </div>
               </div>
+              {/* Quick badge preview (always visible) */}
+              <div className="flex flex-wrap gap-2 mb-5">
+                {[
+                  { src: 'https://images.credly.com/images/987adb7e-49be-4e24-b67e-55986bd3fe66/azure-solutions-architect-expert-600x600.png', label: 'AZ-305' },
+                  { src: 'https://images.credly.com/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png', label: 'AZ-400' },
+                  { src: 'https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-expert-badge.svg', label: 'AI Expert', bg: '#0078d4' },
+                  { src: 'https://skillupwithlevelup.com/levelup-fy26/images/frontier-engineer-badge-icon.png', label: 'TITAN' },
+                  { src: 'https://images.credly.com/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png', label: 'AWS AI' },
+                  { src: 'https://images.credly.com/images/6b924fae-3cd7-4233-b012-97413c62c85d/blob', label: 'GH-300' },
+                ].map(cert => (
+                  <div key={cert.label} className="flex flex-col items-center gap-1" title={cert.label}>
+                    <img
+                      src={cert.src}
+                      alt={cert.label}
+                      className="w-10 h-10 object-contain rounded-lg shadow-sm"
+                      style={cert.bg ? { background: cert.bg, padding: 4 } : {}}
+                    />
+                    <span className="text-[9px] font-bold text-gray-400">{cert.label}</span>
+                  </div>
+                ))}
+                {!certsOpen && (
+                  <button
+                    onClick={() => setCertsOpen(true)}
+                    className="flex flex-col items-center justify-center gap-1 px-3 py-1 rounded-xl bg-gray-50 border border-dashed border-gray-200 text-xs font-semibold text-gray-400 hover:border-ali-blue hover:text-ali-blue-dark transition-colors min-w-[52px]"
+                  >
+                    +9 more
+                  </button>
+                )}
+              </div>
+
+              {/* Full certs — collapsible */}
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateRows: certsOpen ? '1fr' : '0fr',
+                  transition: 'grid-template-rows 0.5s cubic-bezier(0.22,1,0.36,1)',
+                }}
+              >
+              <div style={{ overflow: 'hidden', minHeight: 0 }}>
 
               {/* Microsoft Azure — featured */}
               <div className="mb-8">
@@ -662,6 +728,9 @@ function App() {
                 </div>
 
               </div>
+
+              </div>{/* end collapsible inner */}
+              </div>{/* end collapsible grid */}
             </div>
 
             {/* Career Highlights */}
