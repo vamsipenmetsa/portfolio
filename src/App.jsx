@@ -105,7 +105,7 @@ function App() {
 
           {/* Text Side */}
           <div className="w-full md:w-7/12 text-center md:text-left space-y-5">
-            <p className="text-sm font-bold tracking-widest uppercase text-ali-blue-dark">AI Adoption Lead &amp; Systems Architect · Regulated Financial Services</p>
+            <p className="text-sm font-bold tracking-widest uppercase text-ali-blue-dark">Enterprise AI Adoption Lead &amp; Systems Architect · Regulated Finance</p>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-ali-heading leading-tight">
               From Manual Tester to AI Systems Architect —
               <span className="block text-ali-orange relative">

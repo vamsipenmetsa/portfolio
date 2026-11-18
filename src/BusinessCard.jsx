@@ -69,7 +69,7 @@ export default function BusinessCard({ onDismiss }) {
                 Vamsi<br />Penmetsa
               </h2>
               <p className="font-semibold leading-snug mb-1" style={{ fontSize: 12.5, color: '#3a3a3a' }}>
-                AI Adaptation Leader · Building LLM-as-a-Service
+                Enterprise AI Adoption Lead · Agentic Systems for Regulated Finance
               </p>
               <p style={{ fontSize: 11.5, color: '#6e6e73' }}>
                 EPAM Systems · Warsaw, Poland
