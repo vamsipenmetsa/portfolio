@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, BookOpen, Calendar } from 'lucide-react';
+import { ArrowRight, BookOpen, Calendar, Linkedin } from 'lucide-react';
 
 export default function BusinessCard({ onDismiss }) {
   const [visible, setVisible] = useState(false);
@@ -94,68 +94,43 @@ export default function BusinessCard({ onDismiss }) {
           {/* Divider */}
           <div className="relative mb-4" style={{ height: 1, background: 'rgba(0,0,0,0.08)' }} />
 
-          {/* Bottom: QR + CTAs */}
-          <div className="relative grid gap-3.5 items-center mb-4" style={{ gridTemplateColumns: '84px 1fr' }}>
-            {/* QR Code */}
-            <div className="flex flex-col items-center gap-1">
-              <img
-                src="./linkedin-qr.jpg"
-                alt="LinkedIn QR code — scan to connect"
-                className="rounded-xl"
-                style={{
-                  width: 78, height: 78,
-                  border: '1px solid rgba(0,0,0,0.08)',
-                  display: 'block',
-                }}
-              />
-              <span
-                className="text-center leading-snug"
-                style={{ fontFamily: 'monospace', fontSize: 9, color: '#86868b', letterSpacing: '0.03em' }}
-              >
-                linkedin.com<br />/in/vamsipenmetsa
-              </span>
-            </div>
-
-            {/* CTAs */}
-            <div className="flex flex-col gap-2">
-              <a
-                href="https://vamsipenmetsa.gumroad.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 rounded-2xl font-semibold transition-transform hover:-translate-y-0.5 active:scale-95"
-                style={{
-                  padding: '10px 13px',
-                  fontSize: 13,
-                  background: 'rgba(0,0,0,0.06)',
-                  color: '#1a1a1a',
-                  border: '1px solid rgba(0,0,0,0.1)',
-                  textDecoration: 'none',
-                }}
-                onClick={(e) => e.stopPropagation()}
-              >
-                <BookOpen size={15} />
-                Free Resources
-              </a>
-              <a
-                href="https://topmate.io/vamsipenmetsa"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 rounded-2xl font-semibold transition-transform hover:-translate-y-0.5 active:scale-95"
-                style={{
-                  padding: '10px 13px',
-                  fontSize: 13,
-                  background: '#1a1a1a',
-                  color: '#fff',
-                  boxShadow: '0 4px 14px -4px rgba(0,0,0,0.3)',
-                  textDecoration: 'none',
-                }}
-                onClick={(e) => e.stopPropagation()}
-              >
-                <Calendar size={15} />
-                Book a Call
-              </a>
-            </div>
+          {/* CTAs */}
+          <div className="relative grid grid-cols-2 gap-2.5 mb-2">
+            <a
+              href="https://topmate.io/vamsipenmetsa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 rounded-2xl font-semibold transition-transform hover:-translate-y-0.5 active:scale-95"
+              style={{ padding: '11px 12px', fontSize: 13, background: '#1a1a1a', color: '#fff', boxShadow: '0 4px 14px -4px rgba(0,0,0,0.3)', textDecoration: 'none' }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Calendar size={15} />
+              Book a Call
+            </a>
+            <a
+              href="https://vamsipenmetsa.gumroad.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 rounded-2xl font-semibold transition-transform hover:-translate-y-0.5 active:scale-95"
+              style={{ padding: '11px 12px', fontSize: 13, background: 'rgba(0,0,0,0.06)', color: '#1a1a1a', border: '1px solid rgba(0,0,0,0.1)', textDecoration: 'none' }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <BookOpen size={15} />
+              Free Resources
+            </a>
           </div>
+
+          <a
+            href="https://linkedin.com/in/vamsipenmetsa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative flex items-center justify-center gap-2 mt-2 pt-3.5 hover:text-[#0a66c2] transition-colors"
+            style={{ borderTop: '1px solid rgba(0,0,0,0.08)', fontFamily: 'monospace', fontSize: 11.5, color: '#6e6e73', textDecoration: 'none' }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <Linkedin size={14} />
+            linkedin.com/in/vamsipenmetsa
+          </a>
 
           {/* Enter / View Profile button */}
           <button
