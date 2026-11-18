@@ -75,14 +75,14 @@ const CHAMPION = [
     badge: 'ai-value-driver',
     title: 'AI Value Driver',
     quote:
-      'Thank you for proactively exploring and applying AI solutions! You are going above and beyond the AI Champion role on the [LSEG MaaS] project. Your proactive efforts and clear guidelines are creating the space and confidence our team needs to adopt and experiment with complex AI usage patterns.',
+      'Thank you for proactively exploring and applying AI solutions! You are going above and beyond the AI Champion role on the the project. Your proactive efforts and clear guidelines are creating the space and confidence our team needs to adopt and experiment with complex AI usage patterns.',
     source: 'Delivery Central · 01 Nov 2026',
   },
   {
     badge: 'microsoft-ai-champion',
     title: 'Microsoft AI Champion',
     quote:
-      'Thank you for going above and beyond in your AI Champion role on the [LSEG MaaS] project. Your proactive efforts and clear guidelines are creating the space and confidence our team needs to adopt and experiment with complex AI usage patterns. Your contribution is truly appreciated.',
+      'Thank you for going above and beyond in your AI Champion role on the the project. Your proactive efforts and clear guidelines are creating the space and confidence our team needs to adopt and experiment with complex AI usage patterns. Your contribution is truly appreciated.',
     source: 'Patryk Lesiak · Delivery Manager · 30 Oct 2026',
   },
   {
@@ -118,7 +118,7 @@ export default function Recognition() {
             Driving AI Adoption, <span className="text-ali-orange">Recognised by Leadership</span>
           </h2>
           <p className="text-gray-500 text-lg mt-4 max-w-2xl mx-auto">
-            From the CEO&rsquo;s Bravo to client delivery feedback &mdash; leading AI adoption for a 21-engineer team at LSEG MaaS to improve productivity and drive business value.
+            From the CEO&rsquo;s Bravo to client delivery feedback &mdash; leading AI adoption for a 21-engineer team at Enterprise Client Project to improve productivity and drive business value.
           </p>
         </div>
 
@@ -167,7 +167,7 @@ export default function Recognition() {
             <span className="text-xs font-bold px-3 py-1.5 bg-ali-blue/25 text-sky-800 rounded-full">AI Adoption Lead</span>
             <span className="text-xs font-bold px-3 py-1.5 bg-gray-100 text-gray-600 rounded-full">Going Extra Mile</span>
           </div>
-          <h3 className="text-2xl md:text-3xl font-serif font-bold mt-3">AI Champion &mdash; LSEG MaaS</h3>
+          <h3 className="text-2xl md:text-3xl font-serif font-bold mt-3">AI Champion &mdash; Enterprise Client Project</h3>
           <p className="text-sm text-gray-500 mt-1 mb-8">Leading AI adoption for a 21-engineer team to improve productivity and drive customer business value</p>
           <div className="grid md:grid-cols-3 gap-8">
             {CHAMPION.map((c) => (

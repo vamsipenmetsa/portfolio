@@ -105,7 +105,7 @@ function App() {
 
           {/* Text Side */}
           <div className="w-full md:w-7/12 text-center md:text-left space-y-5">
-            <p className="text-sm font-bold tracking-widest uppercase text-ali-blue-dark">AI Adoption Lead &amp; Systems Architect · LSEG × Microsoft</p>
+            <p className="text-sm font-bold tracking-widest uppercase text-ali-blue-dark">AI Adoption Lead &amp; Systems Architect · a global financial exchange</p>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-ali-heading leading-tight">
               From Manual Tester to AI Systems Architect —
               <span className="block text-ali-orange relative">
@@ -117,7 +117,7 @@ function App() {
             </h1>
 
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed font-sans max-w-xl">
-              I build ML/LLM platforms at <span className="font-bold text-ali-heading">LSEG × Microsoft UK</span>. On the side, I help Cloud &amp; DevOps engineers <span className="font-bold text-ali-heading relative inline-block">crack interviews, land EU jobs,
+              I build ML/LLM platforms at <span className="font-bold text-ali-heading">a global financial exchange</span>. On the side, I help Cloud &amp; DevOps engineers <span className="font-bold text-ali-heading relative inline-block">crack interviews, land EU jobs,
                 <svg className="absolute w-full h-3 -bottom-1 left-0 text-ali-orange" viewBox="0 0 310 9" fill="none" aria-hidden="true">
                   <path d="M2 7C72 3.7 244 -2.3 308 2.5" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
                 </svg>
@@ -392,7 +392,7 @@ function App() {
                     </div>
                     <div className="flex items-start gap-3 text-sm text-gray-600">
                       <Cloud size={16} className="text-ali-blue-dark flex-shrink-0 mt-0.5" />
-                      <span>Based on hands-on experience from the <strong>LSEG × Microsoft</strong> project</span>
+                      <span>Based on hands-on experience from the <strong>a global financial exchange</strong> project</span>
                     </div>
                   </div>
 
@@ -507,7 +507,7 @@ function App() {
               </div>
               
               <p className="text-gray-700 leading-relaxed mb-5 text-sm">
-                Designing and delivering a production <span className="font-bold text-ali-heading">ML/LLM platform</span> for <span className="font-bold text-ali-blue-dark">LSEG × Microsoft UK</span> on Azure — spanning the full lifecycle of financial models from development to monitoring, with security-first design for regulated environments.
+                Designing and delivering a production <span className="font-bold text-ali-heading">ML/LLM platform</span> for <span className="font-bold text-ali-blue-dark">a global financial exchange</span> on Azure — spanning the full lifecycle of financial models from development to monitoring, with security-first design for regulated environments.
               </p>
 
               <div className="bg-ali-blue/5 rounded-xl p-4 mb-5">
@@ -551,7 +551,7 @@ function App() {
               </p>
 
               <div className="grid grid-cols-3 gap-2 mb-5">
-                {['LSEG', 'IMF', 'WTW', 'UBS', 'Corteva', 'Microsoft'].map((company) => (
+                {['Global FinEx', 'IMF', 'WTW', 'UBS', 'Corteva', 'Microsoft'].map((company) => (
                   <div key={company} className="bg-ali-cream p-2 rounded-lg text-center">
                     <p className="font-bold text-xs text-ali-heading">{company}</p>
                   </div>
@@ -749,9 +749,9 @@ function App() {
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 rounded-full bg-ali-blue-dark mt-2 flex-shrink-0"></div>
                     <div>
-                      <p className="font-bold text-sm text-ali-blue-dark">LSEG × Microsoft UK</p>
+                      <p className="font-bold text-sm text-ali-blue-dark">a global financial exchange</p>
                       <p className="text-sm font-medium text-ali-heading mt-0.5">AI Systems Architect & Platform Engineer</p>
-                      <p className="text-xs text-gray-500 mt-1">Modeling-as-a-Service on Azure</p>
+                      <p className="text-xs text-gray-500 mt-1">Enterprise ML Platform on Azure</p>
                     </div>
                   </div>
                 </div>
